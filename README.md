@@ -38,7 +38,7 @@ Commits the changes automatically
 
 The workflow is designed so that solving the problem remains the only regular manual step. The automation records the accepted code and metadata; explanations, complexity analysis, and independent-solving status remain human-reviewed.
 
-> **Privacy:** The LeetCode session credential is stored as a GitHub Actions secret and is never committed to this repository. GitHub encrypts repository secrets and exposes them to workflows only when explicitly referenced. citeturn3search0turn3search5
+> **Privacy:** The LeetCode session credential is stored as a GitHub Actions secret and is never committed to this repository.
 
 ## 📚 Topics
 
@@ -181,7 +181,7 @@ Problems may come from:
 
 ## ⚠️ Automation Notes
 
-The sync uses LeetCode's GraphQL interface, which is not a stable public API. If LeetCode changes its internal API or blocks automated requests, the workflow may need maintenance. The workflow runs on a schedule rather than claiming to be an instant webhook; scheduled GitHub Actions can also be delayed under platform load. citeturn4search4turn4search0
+The sync uses LeetCode's GraphQL interface, which is not a stable public API. If LeetCode changes its internal API or blocks automated requests, the workflow may need maintenance. The workflow runs on a schedule rather than claiming to be an instant webhook; scheduled GitHub Actions can also be delayed under platform load.
 
 ---
 
