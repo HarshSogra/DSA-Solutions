@@ -18,7 +18,7 @@ The goal is not to collect solutions blindly. I use each problem to improve:
 
 ## 🤖 Automatic LeetCode Sync
 
-Accepted LeetCode submissions can be synchronized automatically through **GitHub Actions**.
+Accepted LeetCode submissions are synchronized automatically through **GitHub Actions**.
 
 ```text
 Solve on LeetCode
@@ -27,16 +27,16 @@ Submit → Accepted
       ↓
 GitHub Actions checks every 15 minutes
       ↓
-Fetches accepted code + problem metadata
+Fetches accepted code + problem metadata + all tags
       ↓
-Organizes the problem by DSA topic
+Organizes the problem by a primary DSA topic
       ↓
-Updates PROGRESS.md
+Updates PROGRESS.md + this README
       ↓
 Commits the changes automatically
 ```
 
-The workflow is designed so that solving the problem remains the only regular manual step. The automation records the accepted code and metadata; explanations, complexity analysis, and independent-solving status remain human-reviewed.
+The workflow is designed so that solving the problem remains the only regular manual step. The automation records accepted code and metadata; explanations, complexity analysis, and independent-solving status remain human-reviewed.
 
 > **Privacy:** The LeetCode session credential is stored as a GitHub Actions secret and is never committed to this repository.
 
@@ -45,12 +45,12 @@ The workflow is designed so that solving the problem remains the only regular ma
 | # | Topic | Target | Status |
 |---|---|---:|---|
 | 01 | Arrays | 30 | 🟡 In Progress |
-| 02 | Strings | 20 | ⬜ Not Started |
-| 03 | Hashing | 20 | ⬜ Not Started |
+| 02 | Strings | 20 | 🟡 In Progress |
+| 03 | Hashing | 20 | 🟡 In Progress |
 | 04 | Two Pointers | 15 | ⬜ Not Started |
 | 05 | Sliding Window | 15 | ⬜ Not Started |
 | 06 | Binary Search | 20 | ⬜ Not Started |
-| 07 | Linked List | 20 | ⬜ Not Started |
+| 07 | Linked List | 20 | 🟡 In Progress |
 | 08 | Stack | 15 | ⬜ Not Started |
 | 09 | Queue | 10 | ⬜ Not Started |
 | 10 | Recursion | 15 | ⬜ Not Started |
@@ -65,13 +65,16 @@ The workflow is designed so that solving the problem remains the only regular ma
 
 ## 📊 Current Progress
 
+<!-- AUTO-PROGRESS:START -->
 | Metric | Count |
 |---|---:|
-| Problems Solved | **0** |
-| Easy | 0 |
-| Medium | 0 |
+| Problems Solved | **17** |
+| Easy | 8 |
+| Medium | 9 |
 | Hard | 0 |
-| Patterns Mastered | 0 |
+| Patterns Practiced | 19 |
+| Patterns Mastered | _Manual review_ |
+<!-- AUTO-PROGRESS:END -->
 
 Detailed tracking: **[PROGRESS.md](PROGRESS.md)**
 
@@ -143,7 +146,7 @@ Problem count is only one metric. I also care about **independent solving abilit
 | 💡 Hint | Needed a small hint but completed the solution |
 | 📖 Reviewed | Needed to study the solution/approach |
 
-Automation cannot reliably infer these judgments, so they should remain manual.
+Automation cannot reliably infer these judgments, so they remain manual.
 
 ## 🏆 Milestones
 
@@ -175,7 +178,7 @@ Problems may come from:
 2. Identify the brute-force approach.
 3. Look for a better pattern or data structure.
 4. Submit the solution on LeetCode.
-5. If accepted, GitHub Actions will sync it automatically.
+5. If accepted, GitHub Actions syncs it automatically.
 6. Review the generated problem README and add the approach, complexity, and key takeaway.
 7. Revisit difficult problems later.
 
