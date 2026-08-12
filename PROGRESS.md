@@ -1,15 +1,17 @@
 # 📊 DSA Progress Tracker
 
-This file is updated automatically by the LeetCode sync workflow.
+This file is **updated automatically** by the LeetCode sync workflow. Do not edit the generated numbers manually.
 
 ## Overall Progress
 
 | Metric | Count |
 |---|---:|
-| Problems synced | 17 |
-| Easy | 0 |
-| Medium | 0 |
+| Problems Solved | **17** |
+| Easy | 8 |
+| Medium | 9 |
 | Hard | 0 |
+| Patterns Practiced | **17** |
+| Patterns Mastered | _Manual review_ |
 
 ## Topic Progress
 
@@ -33,6 +35,30 @@ This file is updated automatically by the LeetCode sync workflow.
 | Graphs | 0 | 30 | 0% |
 | Dynamic Programming | 0 | 40 | 0% |
 | Tries | 0 | 10 | 0% |
+
+## Pattern Progress
+
+These counts include **all LeetCode tags**, even when a problem is stored in another primary topic folder.
+
+| Pattern | Problems |
+|---|---:|
+| Array | 14 |
+| Dynamic Programming | 6 |
+| Two Pointers | 5 |
+| Math | 3 |
+| Greedy | 3 |
+| String | 2 |
+| Divide and Conquer | 2 |
+| Sorting | 2 |
+| Hash Table | 2 |
+| Bracket Sequences | 1 |
+| Trie | 1 |
+| Linked List | 1 |
+| Recursion | 1 |
+| Prefix Sum | 1 |
+| Counting | 1 |
+| Boyer–Moore Majority Vote Algorithm | 1 |
+| Stack | 1 |
 
 ## Recent Synced Problems
 
@@ -58,4 +84,6 @@ This file is updated automatically by the LeetCode sync workflow.
 
 ## Notes
 
-The sync can record code and metadata, but it cannot know whether I solved a problem independently or needed a hint. I should review those judgments manually.
+- **Problems Solved, difficulty, topics, and pattern counts are automatic.**
+- **Patterns Mastered is intentionally manual**: syncing a tag does not prove mastery.
+- Review each problem README and add your own approach/complexity notes when useful.
