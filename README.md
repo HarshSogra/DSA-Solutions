@@ -16,6 +16,30 @@ The goal is not to collect solutions blindly. I use each problem to improve:
 
 > **Principle:** Don't memorize solutions. Understand the pattern behind the solution.
 
+## 🤖 Automatic LeetCode Sync
+
+Accepted LeetCode submissions can be synchronized automatically through **GitHub Actions**.
+
+```text
+Solve on LeetCode
+      ↓
+Submit → Accepted
+      ↓
+GitHub Actions checks every 15 minutes
+      ↓
+Fetches accepted code + problem metadata
+      ↓
+Organizes the problem by DSA topic
+      ↓
+Updates PROGRESS.md
+      ↓
+Commits the changes automatically
+```
+
+The workflow is designed so that solving the problem remains the only regular manual step. The automation records the accepted code and metadata; explanations, complexity analysis, and independent-solving status remain human-reviewed.
+
+> **Privacy:** The LeetCode session credential is stored as a GitHub Actions secret and is never committed to this repository. GitHub encrypts repository secrets and exposes them to workflows only when explicitly referenced. citeturn3search0turn3search5
+
 ## 📚 Topics
 
 | # | Topic | Target | Status |
@@ -91,18 +115,23 @@ DSA-Solutions/
 ├── 15-Greedy/
 ├── 16-Graphs/
 ├── 17-Dynamic-Programming/
-└── 18-Tries/
+├── 18-Tries/
+├── scripts/
+│   └── leetcode_sync.py
+├── .github/workflows/
+│   └── leetcode-sync.yml
+├── PROGRESS.md
+└── ROADMAP.md
 ```
 
-Each solved problem should ideally contain:
+Each synced problem is stored as:
 
 ```text
-Problem-Name/
-├── solution.py
-└── README.md
+Topic/
+└── 0001-problem-name/
+    ├── solution.py
+    └── README.md
 ```
-
-The problem README records the approach, complexity, pattern, and key takeaway.
 
 ## 📈 Progress Philosophy
 
@@ -114,7 +143,7 @@ Problem count is only one metric. I also care about **independent solving abilit
 | 💡 Hint | Needed a small hint but completed the solution |
 | 📖 Reviewed | Needed to study the solution/approach |
 
-A smaller number of deeply understood problems is more valuable than a large collection of copied solutions.
+Automation cannot reliably infer these judgments, so they should remain manual.
 
 ## 🏆 Milestones
 
@@ -140,15 +169,19 @@ Problems may come from:
 - Codeforces
 - Coding contests
 
-## 🔄 How I Use This Repository
+## 🔄 Manual Workflow
 
 1. Attempt the problem independently.
 2. Identify the brute-force approach.
 3. Look for a better pattern or data structure.
-4. Implement the solution.
-5. Analyze time and space complexity.
-6. Record the key insight.
+4. Submit the solution on LeetCode.
+5. If accepted, GitHub Actions will sync it automatically.
+6. Review the generated problem README and add the approach, complexity, and key takeaway.
 7. Revisit difficult problems later.
+
+## ⚠️ Automation Notes
+
+The sync uses LeetCode's GraphQL interface, which is not a stable public API. If LeetCode changes its internal API or blocks automated requests, the workflow may need maintenance. The workflow runs on a schedule rather than claiming to be an instant webhook; scheduled GitHub Actions can also be delayed under platform load. citeturn4search4turn4search0
 
 ---
 
