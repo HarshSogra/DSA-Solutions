@@ -1,0 +1,287 @@
+{
+  "valid-parentheses": {
+    "submission_id": "1777780494",
+    "title": "Valid Parentheses",
+    "title_slug": "valid-parentheses",
+    "number": "20",
+    "difficulty": "Easy",
+    "language": "Python",
+    "tags": [
+      "String",
+      "Stack",
+      "Bracket Sequences"
+    ],
+    "folder": "02-Strings",
+    "path": "02-Strings/0020-valid-parentheses/solution.py",
+    "timestamp": 1758435256,
+    "leetcode_url": "https://leetcode.com/problems/valid-parentheses/"
+  },
+  "longest-common-prefix": {
+    "submission_id": "1927544814",
+    "title": "Longest Common Prefix",
+    "title_slug": "longest-common-prefix",
+    "number": "14",
+    "difficulty": "Easy",
+    "language": "Python",
+    "tags": [
+      "Array",
+      "String",
+      "Trie"
+    ],
+    "folder": "01-Arrays",
+    "path": "01-Arrays/0014-longest-common-prefix/solution.py",
+    "timestamp": 1771773027,
+    "leetcode_url": "https://leetcode.com/problems/longest-common-prefix/"
+  },
+  "add-two-numbers": {
+    "submission_id": "1962680841",
+    "title": "Add Two Numbers",
+    "title_slug": "add-two-numbers",
+    "number": "2",
+    "difficulty": "Medium",
+    "language": "Python",
+    "tags": [
+      "Linked List",
+      "Math",
+      "Recursion"
+    ],
+    "folder": "07-Linked-List",
+    "path": "07-Linked-List/0002-add-two-numbers/solution.py",
+    "timestamp": 1774774660,
+    "leetcode_url": "https://leetcode.com/problems/add-two-numbers/"
+  },
+  "product-of-array-except-self": {
+    "submission_id": "1965252369",
+    "title": "Product of Array Except Self",
+    "title_slug": "product-of-array-except-self",
+    "number": "238",
+    "difficulty": "Medium",
+    "language": "Python",
+    "tags": [
+      "Array",
+      "Prefix Sum"
+    ],
+    "folder": "01-Arrays",
+    "path": "01-Arrays/0238-product-of-array-except-self/solution.py",
+    "timestamp": 1774986303,
+    "leetcode_url": "https://leetcode.com/problems/product-of-array-except-self/"
+  },
+  "maximum-subarray": {
+    "submission_id": "1966549273",
+    "title": "Maximum Subarray",
+    "title_slug": "maximum-subarray",
+    "number": "53",
+    "difficulty": "Medium",
+    "language": "Python",
+    "tags": [
+      "Array",
+      "Divide and Conquer",
+      "Dynamic Programming"
+    ],
+    "folder": "01-Arrays",
+    "path": "01-Arrays/0053-maximum-subarray/solution.py",
+    "timestamp": 1775112241,
+    "leetcode_url": "https://leetcode.com/problems/maximum-subarray/"
+  },
+  "maximum-product-subarray": {
+    "submission_id": "1967424084",
+    "title": "Maximum Product Subarray",
+    "title_slug": "maximum-product-subarray",
+    "number": "152",
+    "difficulty": "Medium",
+    "language": "Python",
+    "tags": [
+      "Array",
+      "Dynamic Programming"
+    ],
+    "folder": "01-Arrays",
+    "path": "01-Arrays/0152-maximum-product-subarray/solution.py",
+    "timestamp": 1775196331,
+    "leetcode_url": "https://leetcode.com/problems/maximum-product-subarray/"
+  },
+  "merge-sorted-array": {
+    "submission_id": "2017814378",
+    "title": "Merge Sorted Array",
+    "title_slug": "merge-sorted-array",
+    "number": "88",
+    "difficulty": "Easy",
+    "language": "Python",
+    "tags": [
+      "Array",
+      "Two Pointers",
+      "Sorting"
+    ],
+    "folder": "01-Arrays",
+    "path": "01-Arrays/0088-merge-sorted-array/solution.py",
+    "timestamp": 1780203185,
+    "leetcode_url": "https://leetcode.com/problems/merge-sorted-array/"
+  },
+  "digit-frequency-score": {
+    "submission_id": "2017824755",
+    "title": "Digit Frequency Score",
+    "title_slug": "digit-frequency-score",
+    "number": "3945",
+    "difficulty": "Easy",
+    "language": "Python",
+    "tags": [
+      "Hash Table",
+      "Math"
+    ],
+    "folder": "03-Hashing",
+    "path": "03-Hashing/3945-digit-frequency-score/solution.py",
+    "timestamp": 1780204099,
+    "leetcode_url": "https://leetcode.com/problems/digit-frequency-score/"
+  },
+  "remove-element": {
+    "submission_id": "2017863244",
+    "title": "Remove Element",
+    "title_slug": "remove-element",
+    "number": "27",
+    "difficulty": "Easy",
+    "language": "Python",
+    "tags": [
+      "Array",
+      "Two Pointers"
+    ],
+    "folder": "01-Arrays",
+    "path": "01-Arrays/0027-remove-element/solution.py",
+    "timestamp": 1780207114,
+    "leetcode_url": "https://leetcode.com/problems/remove-element/"
+  },
+  "remove-duplicates-from-sorted-array": {
+    "submission_id": "2018109092",
+    "title": "Remove Duplicates from Sorted Array",
+    "title_slug": "remove-duplicates-from-sorted-array",
+    "number": "26",
+    "difficulty": "Easy",
+    "language": "Python",
+    "tags": [
+      "Array",
+      "Two Pointers"
+    ],
+    "folder": "01-Arrays",
+    "path": "01-Arrays/0026-remove-duplicates-from-sorted-array/solution.py",
+    "timestamp": 1780226805,
+    "leetcode_url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/"
+  },
+  "remove-duplicates-from-sorted-array-ii": {
+    "submission_id": "2018364345",
+    "title": "Remove Duplicates from Sorted Array II",
+    "title_slug": "remove-duplicates-from-sorted-array-ii",
+    "number": "80",
+    "difficulty": "Medium",
+    "language": "Python",
+    "tags": [
+      "Array",
+      "Two Pointers"
+    ],
+    "folder": "01-Arrays",
+    "path": "01-Arrays/0080-remove-duplicates-from-sorted-array-ii/solution.py",
+    "timestamp": 1780247549,
+    "leetcode_url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/"
+  },
+  "majority-element": {
+    "submission_id": "2018985927",
+    "title": "Majority Element",
+    "title_slug": "majority-element",
+    "number": "169",
+    "difficulty": "Easy",
+    "language": "Python",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Divide and Conquer",
+      "Sorting",
+      "Counting",
+      "Boyer–Moore Majority Vote Algorithm"
+    ],
+    "folder": "01-Arrays",
+    "path": "01-Arrays/0169-majority-element/solution.py",
+    "timestamp": 1780308465,
+    "leetcode_url": "https://leetcode.com/problems/majority-element/"
+  },
+  "rotate-array": {
+    "submission_id": "2019100207",
+    "title": "Rotate Array",
+    "title_slug": "rotate-array",
+    "number": "189",
+    "difficulty": "Medium",
+    "language": "Python",
+    "tags": [
+      "Array",
+      "Math",
+      "Two Pointers"
+    ],
+    "folder": "01-Arrays",
+    "path": "01-Arrays/0189-rotate-array/solution.py",
+    "timestamp": 1780317070,
+    "leetcode_url": "https://leetcode.com/problems/rotate-array/"
+  },
+  "best-time-to-buy-and-sell-stock": {
+    "submission_id": "2019374971",
+    "title": "Best Time to Buy and Sell Stock",
+    "title_slug": "best-time-to-buy-and-sell-stock",
+    "number": "121",
+    "difficulty": "Easy",
+    "language": "Python",
+    "tags": [
+      "Array",
+      "Dynamic Programming"
+    ],
+    "folder": "01-Arrays",
+    "path": "01-Arrays/0121-best-time-to-buy-and-sell-stock/solution.py",
+    "timestamp": 1780334639,
+    "leetcode_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+  },
+  "best-time-to-buy-and-sell-stock-ii": {
+    "submission_id": "2023191835",
+    "title": "Best Time to Buy and Sell Stock II",
+    "title_slug": "best-time-to-buy-and-sell-stock-ii",
+    "number": "122",
+    "difficulty": "Medium",
+    "language": "Python",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Greedy"
+    ],
+    "folder": "01-Arrays",
+    "path": "01-Arrays/0122-best-time-to-buy-and-sell-stock-ii/solution.py",
+    "timestamp": 1780656407,
+    "leetcode_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/"
+  },
+  "jump-game": {
+    "submission_id": "2023210991",
+    "title": "Jump Game",
+    "title_slug": "jump-game",
+    "number": "55",
+    "difficulty": "Medium",
+    "language": "Python",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Greedy"
+    ],
+    "folder": "01-Arrays",
+    "path": "01-Arrays/0055-jump-game/solution.py",
+    "timestamp": 1780657929,
+    "leetcode_url": "https://leetcode.com/problems/jump-game/"
+  },
+  "jump-game-ii": {
+    "submission_id": "2023252533",
+    "title": "Jump Game II",
+    "title_slug": "jump-game-ii",
+    "number": "45",
+    "difficulty": "Medium",
+    "language": "Python",
+    "tags": [
+      "Array",
+      "Dynamic Programming",
+      "Greedy"
+    ],
+    "folder": "01-Arrays",
+    "path": "01-Arrays/0045-jump-game-ii/solution.py",
+    "timestamp": 1780661354,
+    "leetcode_url": "https://leetcode.com/problems/jump-game-ii/"
+  }
+}
