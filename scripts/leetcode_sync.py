@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Sync recent accepted LeetCode submissions into this repository."""
+"""Sync accepted LeetCode submissions and regenerate repository progress."""
 from __future__ import annotations
 import json, os, re, sys
 from collections import Counter
@@ -97,11 +97,15 @@ def write_problem(detail: dict) -> tuple[Path, Path]:
     readme_path.write_text(f"# {number}. {title}\n\n| Field | Value |\n|---|---|\n| Platform | LeetCode |\n| Difficulty | {q.get('difficulty','Unknown')} |\n| Language | {lang_name} |\n| Topics | {tag_text} |\n| Problem | [{title}]({lc_url}) |\n\n## Approach\n\nThis solution was synced automatically from my accepted LeetCode submission.\n\n## Complexity\n\n- Time: _To be documented_\n- Space: _To be documented_\n\n## Key Takeaway\n\n_Add the main insight/pattern after reviewing the solution._\n",encoding="utf-8")
     return solution_path, readme_path
 
-def update_progress(registry: dict) -> None:
+def progress_data(registry: dict):
     entries=list(registry.values())
     difficulty=Counter(str(x.get("difficulty","Unknown")).upper() for x in entries)
     topic=Counter(x.get("folder","") for x in entries)
     patterns=Counter(tag for x in entries for tag in (x.get("tags") or []) if tag)
+    return entries, difficulty, topic, patterns
+
+def update_progress(registry: dict) -> None:
+    entries,difficulty,topic,patterns=progress_data(registry)
     lines=["# 📊 DSA Progress Tracker","","This file is **updated automatically** by the LeetCode sync workflow. Do not edit the generated numbers manually.","","## Overall Progress","","| Metric | Count |","|---|---:|",f"| Problems Solved | {len(entries)} |",f"| Easy | {difficulty['EASY']} |",f"| Medium | {difficulty['MEDIUM']} |",f"| Hard | {difficulty['HARD']} |",f"| Patterns Practiced | {len(patterns)} |","| Patterns Mastered | _Manual review_ |"]
     lines += ["","## Topic Progress","","| Topic | Solved | Target | Progress |","|---|---:|---:|---:|"]
     for folder,target in FOLDER_TARGETS.items():
@@ -113,6 +117,38 @@ def update_progress(registry: dict) -> None:
     for x in sorted(entries,key=lambda x:int(x.get("timestamp",0)),reverse=True)[:20]: lines.append(f"| {x.get('number','')} | [{x['title']}]({x['path']}) | {x.get('difficulty','')} | {x.get('language','')} |")
     lines += ["","## Notes","","- **Problems Solved, difficulty, topics, and pattern counts are automatic.**","- **Patterns Mastered is intentionally manual**: syncing a tag does not prove mastery.","- Review each problem README and add your own approach/complexity notes when useful.",""]
     (ROOT/"PROGRESS.md").write_text("\n".join(lines),encoding="utf-8")
+
+def update_readme(registry: dict) -> None:
+    path = ROOT / "README.md"
+    if not path.exists(): return
+    text = path.read_text(encoding="utf-8")
+    entries,difficulty,topic,patterns=progress_data(registry)
+    current = """<!-- AUTO-PROGRESS:START -->
+| Metric | Count |
+|---|---:|
+| Problems Solved | **{total}** |
+| Easy | {easy} |
+| Medium | {medium} |
+| Hard | {hard} |
+| Patterns Practiced | {pattern_count} |
+| Patterns Mastered | _Manual review_ |
+<!-- AUTO-PROGRESS:END -->""".format(total=len(entries),easy=difficulty["EASY"],medium=difficulty["MEDIUM"],hard=difficulty["HARD"],pattern_count=len(patterns))
+    if "<!-- AUTO-PROGRESS:START -->" in text and "<!-- AUTO-PROGRESS:END -->" in text:
+        text = re.sub(r"<!-- AUTO-PROGRESS:START -->.*?<!-- AUTO-PROGRESS:END -->", current, text, flags=re.S)
+    else:
+        section = "## 📊 Current Progress\n\n" + current + "\n\nDetailed tracking: **[PROGRESS.md](PROGRESS.md)**"
+        text = re.sub(r"## 📊 Current Progress\n.*?(?=\n## )", section + "\n\n", text, flags=re.S)
+    # Keep topic statuses aligned with the synced primary folders.
+    def topic_status(folder):
+        count = topic[folder]; target = FOLDER_TARGETS[folder]
+        if count >= target: return "🟢 Complete"
+        if count > 0: return "🟡 In Progress"
+        return "⬜ Not Started"
+    for folder,target in FOLDER_TARGETS.items():
+        label=folder.split("-",1)[1].replace("-"," ")
+        pattern = rf"(\| \d{{2}} \| {re.escape(label)} \| {target} \| )[^|]+( \|)"
+        text = re.sub(pattern, rf"\g<1>{topic_status(folder)}\g<2>", text)
+    path.write_text(text, encoding="utf-8")
 
 def main() -> int:
     registry=load_json(REGISTRY,{ }); state=load_json(SYNC_STATE,{"submission_ids":[]}); seen={str(x) for x in state.get("submission_ids",[])}
@@ -127,7 +163,7 @@ def main() -> int:
         solution_path,_=write_problem(detail); q=detail["question"]
         entry={"submission_id":sid,"title":q["title"],"title_slug":q["titleSlug"],"number":q.get("questionFrontendId",""),"difficulty":q.get("difficulty","Unknown"),"language":(detail.get("lang") or {}).get("verboseName") or (detail.get("lang") or {}).get("name","Unknown"),"tags":[t.get("name") for t in q.get("topicTags") or []],"folder":str(solution_path.parent.relative_to(ROOT)).split("/")[0],"path":str(solution_path.relative_to(ROOT)).replace("\\","/"),"timestamp":int(detail.get("timestamp") or submission.get("timestamp") or 0),"leetcode_url":f"https://leetcode.com/problems/{q['titleSlug']}/"}
         registry[q["titleSlug"]]=entry; seen.add(sid); changed+=1; print(f"Synced: {q.get('questionFrontendId','')}. {q['title']} [{entry['language']}]")
-    save_json(REGISTRY,registry); save_json(SYNC_STATE,{"submission_ids":sorted(seen,key=int)[-500:]}); update_progress(registry); print(f"Done. New accepted submissions synced: {changed}"); return 0
+    save_json(REGISTRY,registry); save_json(SYNC_STATE,{"submission_ids":sorted(seen,key=int)[-500:]}); update_progress(registry); update_readme(registry); print(f"Done. New accepted submissions synced: {changed}"); return 0
 
 if __name__ == "__main__":
     try: raise SystemExit(main())
