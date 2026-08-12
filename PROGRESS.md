@@ -6,11 +6,11 @@ This file is **updated automatically** by the LeetCode sync workflow. Do not edi
 
 | Metric | Count |
 |---|---:|
-| Problems Solved | **17** |
+| Problems Solved | 17 |
 | Easy | 8 |
 | Medium | 9 |
 | Hard | 0 |
-| Patterns Practiced | **17** |
+| Patterns Practiced | 17 |
 | Patterns Mastered | _Manual review_ |
 
 ## Topic Progress
@@ -45,20 +45,20 @@ These counts include **all LeetCode tags**, even when a problem is stored in ano
 | Array | 14 |
 | Dynamic Programming | 6 |
 | Two Pointers | 5 |
-| Math | 3 |
 | Greedy | 3 |
-| String | 2 |
+| Math | 3 |
 | Divide and Conquer | 2 |
-| Sorting | 2 |
 | Hash Table | 2 |
-| Bracket Sequences | 1 |
-| Trie | 1 |
-| Linked List | 1 |
-| Recursion | 1 |
-| Prefix Sum | 1 |
-| Counting | 1 |
+| Sorting | 2 |
+| String | 2 |
 | Boyer–Moore Majority Vote Algorithm | 1 |
+| Bracket Sequences | 1 |
+| Counting | 1 |
+| Linked List | 1 |
+| Prefix Sum | 1 |
+| Recursion | 1 |
 | Stack | 1 |
+| Trie | 1 |
 
 ## Recent Synced Problems
 

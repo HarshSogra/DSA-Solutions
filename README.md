@@ -72,7 +72,7 @@ The workflow is designed so that solving the problem remains the only regular ma
 | Easy | 8 |
 | Medium | 9 |
 | Hard | 0 |
-| Patterns Practiced | 19 |
+| Patterns Practiced | 17 |
 | Patterns Mastered | _Manual review_ |
 <!-- AUTO-PROGRESS:END -->
 
