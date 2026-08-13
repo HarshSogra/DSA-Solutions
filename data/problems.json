@@ -283,5 +283,22 @@
     "path": "01-Arrays/0045-jump-game-ii/solution.py",
     "timestamp": 1780661354,
     "leetcode_url": "https://leetcode.com/problems/jump-game-ii/"
+  },
+  "find-all-duplicates-in-an-array": {
+    "submission_id": "2105027231",
+    "title": "Find All Duplicates in an Array",
+    "title_slug": "find-all-duplicates-in-an-array",
+    "number": "442",
+    "difficulty": "Medium",
+    "language": "Python",
+    "tags": [
+      "Array",
+      "Hash Table",
+      "Sorting"
+    ],
+    "folder": "01-Arrays",
+    "path": "01-Arrays/0442-find-all-duplicates-in-an-array/solution.py",
+    "timestamp": 1786600368,
+    "leetcode_url": "https://leetcode.com/problems/find-all-duplicates-in-an-array/"
   }
 }

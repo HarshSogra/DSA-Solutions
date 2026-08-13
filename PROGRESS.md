@@ -6,9 +6,9 @@ This file is **updated automatically** by the LeetCode sync workflow. Do not edi
 
 | Metric | Count |
 |---|---:|
-| Problems Solved | 17 |
+| Problems Solved | 18 |
 | Easy | 8 |
-| Medium | 9 |
+| Medium | 10 |
 | Hard | 0 |
 | Patterns Practiced | 17 |
 | Patterns Mastered | _Manual review_ |
@@ -17,7 +17,7 @@ This file is **updated automatically** by the LeetCode sync workflow. Do not edi
 
 | Topic | Solved | Target | Progress |
 |---|---:|---:|---:|
-| Arrays | 14 | 30 | 47% |
+| Arrays | 15 | 30 | 50% |
 | Strings | 1 | 20 | 5% |
 | Hashing | 1 | 20 | 5% |
 | Two Pointers | 0 | 15 | 0% |
@@ -42,14 +42,14 @@ These counts include **all LeetCode tags**, even when a problem is stored in ano
 
 | Pattern | Problems |
 |---|---:|
-| Array | 14 |
+| Array | 15 |
 | Dynamic Programming | 6 |
 | Two Pointers | 5 |
 | Greedy | 3 |
+| Hash Table | 3 |
 | Math | 3 |
+| Sorting | 3 |
 | Divide and Conquer | 2 |
-| Hash Table | 2 |
-| Sorting | 2 |
 | String | 2 |
 | Boyer–Moore Majority Vote Algorithm | 1 |
 | Bracket Sequences | 1 |
@@ -64,6 +64,7 @@ These counts include **all LeetCode tags**, even when a problem is stored in ano
 
 | # | Problem | Difficulty | Language |
 |---:|---|---|---|
+| 442 | [Find All Duplicates in an Array](01-Arrays/0442-find-all-duplicates-in-an-array/solution.py) | Medium | Python |
 | 45 | [Jump Game II](01-Arrays/0045-jump-game-ii/solution.py) | Medium | Python |
 | 55 | [Jump Game](01-Arrays/0055-jump-game/solution.py) | Medium | Python |
 | 122 | [Best Time to Buy and Sell Stock II](01-Arrays/0122-best-time-to-buy-and-sell-stock-ii/solution.py) | Medium | Python |
