@@ -300,5 +300,21 @@
     "path": "01-Arrays/0442-find-all-duplicates-in-an-array/solution.py",
     "timestamp": 1786600368,
     "leetcode_url": "https://leetcode.com/problems/find-all-duplicates-in-an-array/"
+  },
+  "find-minimum-in-rotated-sorted-array": {
+    "submission_id": "2105189435",
+    "title": "Find Minimum in Rotated Sorted Array",
+    "title_slug": "find-minimum-in-rotated-sorted-array",
+    "number": "153",
+    "difficulty": "Medium",
+    "language": "Python",
+    "tags": [
+      "Array",
+      "Binary Search"
+    ],
+    "folder": "01-Arrays",
+    "path": "01-Arrays/0153-find-minimum-in-rotated-sorted-array/solution.py",
+    "timestamp": 1786610339,
+    "leetcode_url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/"
   }
 }

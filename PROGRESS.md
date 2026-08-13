@@ -6,18 +6,18 @@ This file is **updated automatically** by the LeetCode sync workflow. Do not edi
 
 | Metric | Count |
 |---|---:|
-| Problems Solved | 18 |
+| Problems Solved | 19 |
 | Easy | 8 |
-| Medium | 10 |
+| Medium | 11 |
 | Hard | 0 |
-| Patterns Practiced | 17 |
+| Patterns Practiced | 18 |
 | Patterns Mastered | _Manual review_ |
 
 ## Topic Progress
 
 | Topic | Solved | Target | Progress |
 |---|---:|---:|---:|
-| Arrays | 15 | 30 | 50% |
+| Arrays | 16 | 30 | 53% |
 | Strings | 1 | 20 | 5% |
 | Hashing | 1 | 20 | 5% |
 | Two Pointers | 0 | 15 | 0% |
@@ -42,7 +42,7 @@ These counts include **all LeetCode tags**, even when a problem is stored in ano
 
 | Pattern | Problems |
 |---|---:|
-| Array | 15 |
+| Array | 16 |
 | Dynamic Programming | 6 |
 | Two Pointers | 5 |
 | Greedy | 3 |
@@ -51,6 +51,7 @@ These counts include **all LeetCode tags**, even when a problem is stored in ano
 | Sorting | 3 |
 | Divide and Conquer | 2 |
 | String | 2 |
+| Binary Search | 1 |
 | Boyer–Moore Majority Vote Algorithm | 1 |
 | Bracket Sequences | 1 |
 | Counting | 1 |
@@ -64,6 +65,7 @@ These counts include **all LeetCode tags**, even when a problem is stored in ano
 
 | # | Problem | Difficulty | Language |
 |---:|---|---|---|
+| 153 | [Find Minimum in Rotated Sorted Array](01-Arrays/0153-find-minimum-in-rotated-sorted-array/solution.py) | Medium | Python |
 | 442 | [Find All Duplicates in an Array](01-Arrays/0442-find-all-duplicates-in-an-array/solution.py) | Medium | Python |
 | 45 | [Jump Game II](01-Arrays/0045-jump-game-ii/solution.py) | Medium | Python |
 | 55 | [Jump Game](01-Arrays/0055-jump-game/solution.py) | Medium | Python |
